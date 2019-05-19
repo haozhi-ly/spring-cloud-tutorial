@@ -11,15 +11,18 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.HashMap;
 import java.util.Map;
 
-@Controller
+@RestController
 public class HelloController {
     @Value("${from}")
     private String from;
 
-    @resonseBoady
     @RequestMapping("/hello")
     public String hello() {
         return "hello,the profile is "+from;
+    }
+    @RequestMapping("/hi")
+    public String hello() {
+        return "are you ok?";
     }
 
 
