@@ -1,0 +1,12 @@
+server:
+  port: 9093
+
+spring:
+  application:
+    name: fegin-consumer
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8090/eureka/
+
+debug: false

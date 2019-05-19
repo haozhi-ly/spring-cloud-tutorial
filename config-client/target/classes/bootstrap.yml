@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: ly
+  cloud:
+    config:
+      profile: dev
+      lable: master
+      uri: http://localhost:10010/

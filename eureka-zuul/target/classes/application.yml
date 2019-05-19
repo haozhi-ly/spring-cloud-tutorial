@@ -1,0 +1,21 @@
+server:
+  port: 9095
+
+spring:
+  application:
+    name: zuul-getway
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8090/eureka/
+zuul:
+  routes:
+    api-hello:
+      path: /api-hello/**
+      serviceId: hello-service
+    api-hi:
+      path: /api-hi/**
+      serviceId: hi-service
+
+debug: false
