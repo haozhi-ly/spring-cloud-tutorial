@@ -19,8 +19,12 @@ public class HelloController {
     @resonseBoady
     @RequestMapping("/hello")
     public String hello() {
+    	System.out.println("thank you , i'm very happy")
         return "hello,the profile is "+from;
     }
+    
+    
+    
 
 
 }
